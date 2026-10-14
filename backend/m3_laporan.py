@@ -29,7 +29,7 @@ def nilai_kunci(baris, indeks, nama):
     nilai = baris[indeks].strip()
     if nama == "harga" or nama == "selesai":
         if nilai == "":
-            return (1, 0)  # Nilai kosong diletakkan terakhir.
+            return (1, 0)
         try:
             return (0, float(nilai))
         except ValueError:
@@ -76,7 +76,6 @@ def merge_sort(data, indeks, nama="harga"):
             k = kiri
             while i < tengah and j < kanan:
                 perbandingan += 1
-                # <= mempertahankan urutan asli ketika kunci sama.
                 if nilai_kunci(a[i], indeks, nama) <= nilai_kunci(a[j], indeks, nama):
                     bantu[k] = a[i]
                     i += 1
