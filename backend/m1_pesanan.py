@@ -244,7 +244,6 @@ def cek_m1():
         array.tambah_belakang(x)
         linked.tambah_belakang(x)
 
-    # 1. VIP masuk depan
     array.tambah_depan("VIP")
     linked.tambah_depan("VIP")
 
@@ -252,7 +251,6 @@ def cek_m1():
     assert linked.ambil(0) == "VIP"
     print("1. VIP masuk depan: BERHASIL")
 
-    # 2. PRIORITAS masuk tengah
     array.tambah_tengah("PRIORITAS")
     linked.tambah_tengah("PRIORITAS")
 
@@ -260,7 +258,6 @@ def cek_m1():
     assert linked.ambil(2) == "PRIORITAS"
     print("2. PRIORITAS masuk tengah: BERHASIL")
 
-    # 3. REGULER masuk belakang
     array.tambah_belakang("REGULER")
     linked.tambah_belakang("REGULER")
 
@@ -276,13 +273,11 @@ def cek_m1():
 
     print("4. Semua isi Array dan Linked List sama: BERHASIL")
 
-    # 5. Lihat pesanan
     assert array.ambil(2) == linked.ambil(2)
     assert array.ambil(-1) is None
     assert linked.ambil(-1) is None
     print("5. Lihat pesanan: BERHASIL")
 
-    # 6. Hapus pesanan tengah
     hasil_array = array.hapus(2)
     hasil_linked = linked.hapus(2)
 
@@ -290,14 +285,12 @@ def cek_m1():
     assert hasil_linked == "PRIORITAS"
     print("6. Hapus pesanan tengah: BERHASIL")
 
-    # 7. Periksa head dan tail
     assert linked.head.data == "VIP"
     assert linked.tail.data == "REGULER"
     assert linked.tail.next is None
     assert linked.size == array.jumlah()
     print("7. Head, tail, dan size: BERHASIL")
 
-    # 8. Periksa kondisi kosong
     while array.jumlah() > 0:
         assert array.hapus(0) == linked.hapus(0)
 
@@ -306,7 +299,6 @@ def cek_m1():
     assert linked.jumlah() == 0
     print("8. Hapus hingga kosong: BERHASIL")
 
-    # 9. Periksa tambah setelah kosong
     array.tambah_belakang("BARU")
     linked.tambah_belakang("BARU")
 
@@ -316,7 +308,6 @@ def cek_m1():
     print("9. Tambah data setelah kosong: BERHASIL")
 
     print("\nSEMUA PENGUJIAN M1 BERHASIL!")
-
 
 if __name__ == "__main__":
     cek_m1()
