@@ -11,7 +11,6 @@
 Pada M1 project 2EZ4U-APP berfokus pada implementasi struktur data Array dan Linked List untuk mengelola pesanan pada aplikasi layanan pengantaran makanan atau barang.
 1) Array : Struktur data yang digunakan untuk menyimpan sekumpulan elemen secara berurutan dalam memori.
 2) Linked List : Struktur data yang digunakan untuk menyimpan sekumpulan elemen dalam bentuk node yang saling terhubung melalui referensi atau pointer.
-File implementasi: `backend/m1_pesanan.py`
 
 ### M2 Stack & Queue
 1) Stack-Undo : Stack Undo digunakan untuk membatalkan tindakan terakhir yang telah dilakukan pengguna sehingga sistem kembali ke kondisi sebelumnya. Setiap tindakan, seperti menambahkan atau mengeluarkan pesanan dari antrean, disimpan dalam stack. Ketika perintah Undo dijalankan, tindakan terakhir diambil menggunakan operasi pop() kemudian dibatalkan dengan menjalankan operasi kebalikannya.
@@ -19,14 +18,12 @@ File implementasi: `backend/m1_pesanan.py`
 3) Queue-Enqueue : Operasi untuk menambahkan data atau pesanan baru ke bagian belakang antrean (rear).
 4) Queue-Dequeue Naif : operasi untuk mengeluarkan data atau pesanan dari bagian depan antrean (front) menggunakan array biasa. Setelah elemen pertama dikeluarkan, seluruh elemen yang tersisa harus digeser satu posisi ke depan untuk mengisi ruang kosong.
 5) Queue-Dequeue Circular : Operasi untuk mengeluarkan data dari bagian depan antrean menggunakan struktur Circular Queue atau antrean melingkar. Berbeda dengan Dequeue Naif, operasi ini tidak memerlukan pergeseran elemen karena hanya mengubah posisi penunjuk front ke indeks berikutnya. Ketika penunjuk mencapai akhir array, posisinya dapat kembali ke indeks awal menggunakan operasi modulo.
-File implementasi: `backend/m2_antrean.py`
 
 ### M3 Sort & Search 
 1) Sort-Insertion Sort : Algoritma pengurutan yang bekerja dengan mengambil satu elemen, kemudian membandingkannya dengan elemen sebelumnya untuk menentukan posisi yang tepat. Jika elemen sebelumnya lebih besar, elemen tersebut akan digeser ke kanan hingga data tersusun secara berurutan. 
 2) Sort-Merge Sort : Algoritma pengurutan yang menggunakan metode divide and conquer, yaitu membagi data menjadi dua bagian secara berulang hingga setiap bagian hanya memiliki satu elemen. Setelah itu, setiap bagian digabungkan kembali secara terurut hingga seluruh data tersusun dengan benar.
 3) Search-Linear Search : Algoritma pencarian yang bekerja dengan memeriksa setiap elemen secara berurutan dari awal hingga data yang dicari ditemukan atau seluruh elemen telah diperiksa.
 4) Search-Binary Search : Algoritma pencarian yang bekerja dengan membagi ruang pencarian menjadi dua bagian secara berulang. Algoritma ini membandingkan data yang dicari dengan elemen tengah, kemudian melanjutkan pencarian pada bagian kiri atau kanan sesuai hasil perbandingan.
-File implementasi: `backend/m3_laporan.py`
 
 ## Teknologi yang digunakan
 1. Python 3.11 : Bahasa pemrograman
