@@ -7,19 +7,29 @@ class ArrayPesanan:
         self.data = []
 
     def tambah_depan(self, x):
-        self.data.insert(0, x)
+        self.data.append(None)
+        for i in range(len(self.data) - 1, 0, -1):
+            self.data[i] = self.data[i - 1]
+        self.data[0] = x
 
     def tambah_belakang(self, x):
         self.data.append(x)
 
     def tambah_tengah(self, x):
         posisi = len(self.data) // 2
-        self.data.insert(posisi, x)
+        self.data.append(None)
+        for i in range(len(self.data) - 1, posisi, -1):
+            self.data[i] = self.data[i - 1]
+        self.data[posisi] = x
 
     def hapus(self, posisi):
         if posisi < 0 or posisi >= len(self.data):
             return None
-        return self.data.pop(posisi)
+        x = self.data[posisi]
+        for i in range(posisi, len(self.data) - 1):
+            self.data[i] = self.data[i + 1]
+        self.data.pop()         
+        return x
 
     def ambil(self, posisi):
         if posisi < 0 or posisi >= len(self.data):
