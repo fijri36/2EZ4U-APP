@@ -16,7 +16,7 @@ Pada M1 project 2EZ4U-APP berfokus pada implementasi struktur data Array dan Lin
 1) Stack-Undo : Stack Undo digunakan untuk membatalkan tindakan terakhir yang telah dilakukan pengguna sehingga sistem kembali ke kondisi sebelumnya. Setiap tindakan, seperti menambahkan atau mengeluarkan pesanan dari antrean, disimpan dalam stack. Ketika perintah Undo dijalankan, tindakan terakhir diambil menggunakan operasi pop() kemudian dibatalkan dengan menjalankan operasi kebalikannya.
 2) Stack-Redo : Stack Redo digunakan untuk mengulangi tindakan yang sebelumnya telah dibatalkan menggunakan Undo. Ketika Undo dilakukan, tindakan yang dibatalkan akan disimpan dalam Stack Redo. Jika pengguna menjalankan Redo, tindakan tersebut diambil menggunakan pop() dan dijalankan kembali seperti semula.
 3) Queue-Enqueue : Operasi untuk menambahkan data atau pesanan baru ke bagian belakang antrean (rear).
-4) Queue-Dequeue Naif : operasi untuk mengeluarkan data atau pesanan dari bagian depan antrean (front) menggunakan array biasa. Setelah elemen pertama dikeluarkan, seluruh elemen yang tersisa harus digeser satu posisi ke depan untuk mengisi ruang kosong.
+4) Queue-Dequeue Naif : operasi untuk mengeluarkan data atau pesanan dari bagian depan antrean (front) menggunakan array biasa.
 5) Queue-Dequeue Circular : Operasi untuk mengeluarkan data dari bagian depan antrean menggunakan struktur Circular Queue atau antrean melingkar. Berbeda dengan Dequeue Naif, operasi ini tidak memerlukan pergeseran elemen karena hanya mengubah posisi penunjuk front ke indeks berikutnya. Ketika penunjuk mencapai akhir array, posisinya dapat kembali ke indeks awal menggunakan operasi modulo.
 
 ### M3 Sort & Search 
