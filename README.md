@@ -17,7 +17,7 @@ Pada M1 project 2EZ4U-APP berfokus pada implementasi struktur data Array dan Lin
 2) Stack-Redo : Stack Redo digunakan untuk mengulangi tindakan yang sebelumnya telah dibatalkan menggunakan Undo. Ketika Undo dilakukan, tindakan yang dibatalkan akan disimpan dalam Stack Redo. Jika pengguna menjalankan Redo, tindakan tersebut diambil menggunakan pop() dan dijalankan kembali seperti semula.
 3) Queue-Enqueue : Operasi untuk menambahkan data atau pesanan baru ke bagian belakang antrean (rear).
 4) Queue-Dequeue Naif : operasi untuk mengeluarkan data atau pesanan dari bagian depan antrean (front) menggunakan array biasa.
-5) Queue-Dequeue Circular : Operasi untuk mengeluarkan data dari bagian depan antrean menggunakan struktur Circular Queue atau antrean melingkar. Berbeda dengan Dequeue Naif, operasi ini tidak memerlukan pergeseran elemen karena hanya mengubah posisi penunjuk front ke indeks berikutnya. Ketika penunjuk mencapai akhir array, posisinya dapat kembali ke indeks awal menggunakan operasi modulo.
+5) Queue-Dequeue Circular : Operasi untuk mengeluarkan data dari bagian depan antrean menggunakan struktur Circular Queue atau antrean melingkar. Ketika penunjuk mencapai akhir array, posisinya dapat kembali ke indeks awal menggunakan operasi modulo.
 
 ### M3 Sort & Search 
 1) Sort-Insertion Sort : Algoritma pengurutan yang bekerja dengan mengambil satu elemen, kemudian membandingkannya dengan elemen sebelumnya untuk menentukan posisi yang tepat. Jika elemen sebelumnya lebih besar, elemen tersebut akan digeser ke kanan hingga data tersusun secara berurutan. 
